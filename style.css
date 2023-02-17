@@ -1,0 +1,51 @@
+#main{
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(220, 220, 220);
+}
+
+#place{
+    display: none;
+    margin-left: 50%;
+    background-color: blue;
+    
+}
+
+body{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: bisque;
+}
+
+
+#all{
+    background-color: aliceblue;
+    padding: 5%;
+
+}
+
+#capta{
+    display: none;
+    margin-top: 1cm;
+}
+.part{
+    margin-left: 6%;
+    margin-right: 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 6cm;
+}
+
+.button{
+    padding: 1%;
+    background-color: red;
+    border: none;
+    color: rgb(255, 255, 255);
+    margin-top: 1%;
+    
+}
+

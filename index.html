@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Order form</title>
+</head>
+<body>
+    <div id="all">
+<div class="para">
+    <h2>ORDER FORM</h2>
+    <p>You can order our perfume by filling out the foem below. We offer discounts for large quantities.
+    </p>
+    <p>Standard price $120 per bottle</p>
+    <p>Special price:$110 per bottle, order quantity > 30 bottles. $100 per bottle, oeder quantity > 80 bottles</p>
+    <p>Shipping fees: $80 standard fees. Free shipping for orders with more than 10 bottles</p>
+</div>
+
+    <form action="action_page.php">
+        <div id="main">
+        <div class="part">
+        <div><label for="name">Name*</label><br>
+        <input type="text" id="name" placeholder="Max Rockly" required>
+    </div>
+
+    <div>
+        <label for="qtn">Order quantity*</label><br>
+        <input type="number" id="qtn" min="1" max="99" placeholder="1" required>
+
+    </div>
+    <div>
+        Order amount <br>
+        <input id="amt" type="number" value="0">
+    </div>
+    <div>
+        Total amount to be paid <br>
+        <input id="tamt" type="number" placeholder="0">
+    </div>
+</div>
+
+
+<div class="part">
+    <div>
+        <label for="mail">Email*</label><br>
+        <input type="email" id="mail" placeholder="user@gmail.com" required>
+    </div>
+    <div>
+        <label for="type">Category*</label><br>
+        <select id="type">
+            <option value="120">beer-$120</option>
+            <option value="80">wine-$80</option>
+            <option value="200">coctail--$200</option>
+        </select>
+    </div>
+    <div>
+        delievery date* <br>
+        <input type="date" required>    
+    </div>
+</div>
+</div>
+    <div id="btn">
+        <button class="button" onclick="done()">PLACE ORDER</button>
+        <input type="reset" class="button" >
+        <br>
+        <input type="submit" class="button" id="place">
+    </div>
+    </form>
+
+
+    <div id="capta" >
+        <input id="random" class="new" type="number">
+        <input id="write" class="new" type="number">
+        <button class="button" onclick="show()">done</button><br>
+        **click the SUBMIT button to continue**
+    </div>
+</div>
+</body>
+</html>
+<script src="script.js"></script>
